@@ -1,117 +1,109 @@
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+* { 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #b44a65, #4584d6);
-}
-
-/* Main container */
 .container {
-  width: 500px;
-  max-width: 95%;
-  background: #fff;
-  padding: 50px;
-  border-radius: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+   min-height: 100vh;
+   width: 100%;
+   background: linear-gradient(135deg, #153677, #4e085f);
+   padding: 10px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #160101;
+.todo-app {
+   width: 100%;
+   max-width: 540px;
+   background: linear-gradient(135deg, #7c2767, #5c7c9b);
+   margin: 100px auto 20px;
+   padding: 40px 30px 70px;
+   border-radius: 10px;
 }
 
-/* Search */
-.search-box {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 20px;
+.todo-app h2 {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   color: #fff;
 }
 
-.search-box input {
-  flex: 1;
-  padding: 12px 15px;
-  border: 2px solid #667eea;
-  border-radius: 12px;
-  outline: none;
-  font-size: 1rem;
+.todo-app h2 i {
+   font-size: 23px;
+   color: #002765;
+   background: #fff;
+   padding: 5px;
+   border-radius: 50%;
 }
 
-.search-box button {
-  padding: 12px 18px;
-  border: none;
-  border-radius: 12px;
-  background: #667eea;
-  color: rgb(250, 248, 248);
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+.row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   border-radius: 30px;
+   padding-left: 20px;
+   margin-bottom: 25px;
 }
 
-.search-box button:hover {
-  background: #5a67d8;
+input {
+   flex: 1;
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 10px;
+   font-size: 17px;
 }
 
-/* Result */
-.result {
-  margin-top: 15px;
+.button {
+   border: none;
+   outline: none;
+   background: #002765;
+   padding: 16px 30px;
+   color: #fff;
+   font-size: 16px;
+   border-radius: 40px;
+   cursor: pointer;
+   transition: all 0.3s ease;
 }
 
-/* Word header card */
-.word-card {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 15px;
+.button:hover {
+   background: #0044aa;
 }
 
-.word-card h2 {
-  font-size: 1.6rem;
-  color: #222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ul li {
+   list-style: none;
+   font-size: 18px;
+   padding: 12px 8px 12px 50px;
+   user-select: none;
+   cursor: pointer;
+   position: relative;
+   background: #f5f5f5;
+   margin: 8px 0;
+   border-radius: 8px;
 }
 
-.word-card span {
-  font-size: 1rem;
-  color: #555;
+ul li.checked {
+   text-decoration: line-through;
+   color: #555;
 }
 
-.word-card audio {
-  margin-top: 10px;
-  width: 100%;
+ul li span {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   line-height: 25px;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #555;
+   cursor: pointer;
 }
 
-/* Meaning cards */
-.meaning-card {
-  background: #fafafa;
-  padding: 15px;
-  border-left: 5px solid #667eea;
-  border-radius: 8px;
-  margin-bottom: 12px;
+ul li span:hover {
+   background: #ddd;
 }
 
-.meaning-card h3 {
-  font-size: 1.1rem;
-  color: #444;
-  margin-bottom: 8px;
-}
-
-.meaning-card p {
-  margin: 6px 0;
-  line-height: 1.4;
-}
-
-.meaning-card em {
-  color: #ccc1c1;
-}
