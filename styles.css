@@ -1,0 +1,117 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b44a65, #4584d6);
+}
+
+/* Main container */
+.container {
+  width: 500px;
+  max-width: 95%;
+  background: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #160101;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #667eea;
+  color: rgb(250, 248, 248);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #5a67d8;
+}
+
+/* Result */
+.result {
+  margin-top: 15px;
+}
+
+/* Word header card */
+.word-card {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.word-card h2 {
+  font-size: 1.6rem;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-card span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.word-card audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Meaning cards */
+.meaning-card {
+  background: #fafafa;
+  padding: 15px;
+  border-left: 5px solid #667eea;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.meaning-card h3 {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.meaning-card p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.meaning-card em {
+  color: #ccc1c1;
+}
